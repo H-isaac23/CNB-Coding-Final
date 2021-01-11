@@ -1,25 +1,27 @@
 class myStackImp(object):
     def __init__(self):
+        self.max = []
         self.items = []
     def push(self, x):
-        if self.items == []:
-            self.items.append(x)
-        elif x > self.items[-1]:
-            self.items.append(x)
+        self.items.append(x)
+        if self.max == []:
+            self.max.append(x)
         else:
-            self.items.insert(-2, x)
+            if self.max[-1] < x:
+                self.max.append(x)
     def pop(self):
         if self.items == []:
             print("Error, empty stack")
         else:
             self.items.pop()
+            self.max.pop()
     def top(self):
         if self.items == []:
             print("Error, empty stack")
         else:
             return self.items[-1]
     def getMax(self):
-        return self.items[-1]
+        return self.max[-1]
 
 x = myStackImp()
 x.push(-3)
