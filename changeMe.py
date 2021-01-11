@@ -15,8 +15,8 @@ def change_me(denomination, n):
     else:
         return f'{num_coins} coins'
 
-print(change_me([50], 50))
-print(change_me([5, 10, 25], 69))
-print(change_me([1, 5, 10, 20, 50], 213))
-print(change_me([50, 100, 500, 1000], 362880))
 print(change_me([1, 5, 10, 20], 39))
+print(change_me([1, 5, 10, 20, 50], 213))
+print(change_me([5, 10, 25], 69))
+print(change_me([50], 50))
+print(change_me([50, 100, 500, 1000], 362880))

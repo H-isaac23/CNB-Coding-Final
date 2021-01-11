@@ -8,3 +8,6 @@ def is_word_chain(words):
 print(is_word_chain(['bake', 'eggs', 'snack', 'karat', 'tuna']))
 print(is_word_chain(['sycamore', 'elon', 'nonutnovember', 'ricegum', 'maxxis']))
 print(is_word_chain(['apple', 'egg', 'snack', 'karat', 'tuna']))
+print(is_word_chain(['c', 'cloud computing', 'googl', 'larry', 'youtube']))
+print(is_word_chain(['average', 'earth', 'hamster', 'rocket', 'theta']))
+
