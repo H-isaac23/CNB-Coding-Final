@@ -6,6 +6,8 @@ class myStackImp(object):
             self.items.append(x)
         elif x > self.items[-1]:
             self.items.append(x)
+        else:
+            self.items.insert(-2, x)
     def pop(self):
         if self.items == []:
             print("Error, empty stack")
