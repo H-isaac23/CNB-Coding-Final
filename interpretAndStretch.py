@@ -3,9 +3,13 @@ def interpretAndStretch(s):
     eval_str = []
     multipliers = []
     nums = '0123456789'
+    i = 0
     for x in s:
         if x in nums:
-            multipliers.append(x)
+            if i > 0 and s[i-1] in nums:
+                multipliers.append(multipliers.pop()+x)
+            else:
+                multipliers.append(x)
         elif x == '[':
             string += x
         elif x == ']':
@@ -19,6 +23,7 @@ def interpretAndStretch(s):
                     break
         else:
             string += x
+        i += 1
     return ''.join(string)
 
 
